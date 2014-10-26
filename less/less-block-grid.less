@@ -1,0 +1,103 @@
+// LESS CSS Block Grid
+
+// --- Content ---
+// 1. Variables
+// 2. CSS
+// 3. Mixins
+// 4. Grid item proportions generator
+// 5. Clearfix mixin
+
+
+
+// --- 1. Variables ---
+
+@include-html-classes:  true;
+@gutter-width:          14px;
+@max-columns:           12;
+@small-start:           500px;
+@large-start:           800px;
+
+
+// --- 2. CSS ---
+
+.block-grid when (@include-html-classes) {
+
+  // Row
+  .block-grid-row();
+
+  // Items
+  > li,
+  .block-grid-item {
+    .block-grid-item-base();
+  }
+
+  // Items proportions
+  @media screen and (min-width: @small-start) and (max-width: (@large-start - 1)) {
+    .generate-grid-item-proportions(small);
+  }
+  @media screen and (min-width: @large-start) {
+    .generate-grid-item-proportions(large);
+  };
+}
+
+
+// --- 3. Mixins ---
+
+// Rows and columns CSS
+
+.block-grid-row() {
+  margin: 0 0 0 -(@gutter-width/2);
+  padding: 0;
+  .clearfix; 
+}
+
+.block-grid-item-base() {
+  box-sizing: border-box;
+  float: left;
+  padding: 0 @gutter-width/2;
+  margin: 0;
+  list-style-type: none;
+}
+
+.block-grid-item-proportion(@items-per-row) {
+  width: percentage(1/@items-per-row);
+
+  &:nth-of-type(@{items-per-row}n) {
+    padding-right: 0;
+  }
+
+  &:nth-of-type(@{items-per-row}n+1) {
+    clear: left;
+  }
+}
+
+
+// --- 4. Grid item proportions generator ---
+
+// (IE. .block-grid-large-2 > li  { width: 50%; } …)
+
+.generate-grid-item-proportions(@size, @index: 2) when (@index < (@max-columns + 1)) {
+  &.block-grid-@{size}-@{index} > li,
+  &.block-grid-@{size}-@{index} > .block-grid-item {
+    .block-grid-item-proportion(@index);
+  }
+
+  .generate-grid-item-proportions(@size, @index + 1);
+}
+
+
+// --- 5. Clearfix mixin  ---
+
+// (remove if you use your own)
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; 
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
