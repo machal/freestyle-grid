@@ -20,12 +20,12 @@ grid columns. Block grid is solution for you.
   <li>5) Lorem Ipsum…</li>
   <li>6) Lorem Ipsum…</li>
 </ul>
-```` html
+```` 
 
 
 ### 2nd example: 1/3 layout + 1/6 on large displays
 
-```
+```html
 <ul class="block-grid block-grid-3 block-grid-large-6">
   <li>1) Lorem Ipsum…</li>
   <li>2) Lorem Ipsum…</li>
@@ -40,7 +40,7 @@ grid columns. Block grid is solution for you.
 
 You are welcome to use LESS variables:
 
-```less
+```
 @include-html-classes:  true;   // Generate .block-grid-X classes or use your own?
 @gutter-width:          14px;   // Gutter between grid columns
 @max-columns:           12;     // Maximum number of columns you use on your project
