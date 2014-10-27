@@ -1,9 +1,9 @@
 # Block Grid for LESS CSS
 
-**Layout module for irregular grid. 
-Based on (Foundation's [Block Grid](http://foundation.zurb.com/docs/components/block_grid.html) component).**
+**Layout module for irregular grid. Suitable for non-layout grids such as thumbnails. 
+Based on [Block Grid](http://foundation.zurb.com/docs/components/block_grid.html) component from Foundation framework.**
 
-Regular grid like Bootstrap's is great but suitable for layouts only. If your UI component
+Regular grid like [the one from Bootstrap](http://getbootstrap.com/css/#grid) is great but suitable for layouts only. If your UI component
 needs uncommon layout, you want block grid. Sometimes 3, sometimes 5 sometimes 11 
 grid columns. Block grid is solution for you.
 
@@ -20,7 +20,7 @@ grid columns. Block grid is solution for you.
   <li>5) Lorem Ipsum…</li>
   <li>6) Lorem Ipsum…</li>
 </ul>
-```` 
+```
 
 
 ### 2nd example: 1/3 layout + 1/6 on large displays
@@ -34,7 +34,20 @@ grid columns. Block grid is solution for you.
   <li>5) Lorem Ipsum…</li>
   <li>6) Lorem Ipsum…</li>
 </ul>
-````
+```
+
+### `ul`/`li` markup is not required
+
+If you don't want `ul`/`li` markup, use classes `.block-grid` for the parent and `.block-grid-item` for grid items on any element you want:
+
+
+```html
+<div class="block-grid block-grid-3">
+  <div class="block-grid-item">1) Lorem Ipsum…</div>
+  <div class="block-grid-item">2) Lorem Ipsum…</div>
+  <div class="block-grid-item">3) Lorem Ipsum…</div>
+</div>
+```
 
 # Configuration
 
