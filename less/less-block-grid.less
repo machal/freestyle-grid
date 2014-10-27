@@ -14,8 +14,8 @@
 @include-html-classes:  true;
 @gutter-width:          14px;
 @max-columns:           12;
-@small-start:           500px;
-@large-start:           800px;
+@grid-start:            600px;
+@large-grid-start:      1025px;
 
 
 // --- 2. CSS ---
@@ -23,20 +23,22 @@
 .block-grid when (@include-html-classes) {
 
   // Row
+  
   .block-grid-row();
 
   // Items
+  
   > li,
   .block-grid-item {
     .block-grid-item-base();
   }
 
   // Items proportions
-  @media screen and (min-width: @small-start) and (max-width: (@large-start - 1)) {
-    .generate-grid-item-proportions(small);
-  }
-  @media screen and (min-width: @large-start) {
-    .generate-grid-item-proportions(large);
+
+  .generate-default-grid-proportions();
+  
+  @media screen and (min-width: @large-grid-start) {
+    .generate-breakpoints-grid-proportions(large);
   };
 }
 
@@ -61,6 +63,8 @@
 
 .block-grid-item-proportion(@items-per-row) {
   width: percentage(1/@items-per-row);
+  padding-right: @gutter-width/2;
+  clear: none;
 
   &:nth-of-type(@{items-per-row}n) {
     padding-right: 0;
@@ -74,15 +78,28 @@
 
 // --- 4. Grid item proportions generator ---
 
+// Items for default values
+// (IE. .block-grid-2 > li  { width: 50%; } …)
+
+.generate-default-grid-proportions(@index: 2) when (@index < (@max-columns + 1)) {
+  &.block-grid-@{index} > li,
+  &.block-grid-@{index} > .block-grid-item {
+    .block-grid-item-proportion(@index);
+  }
+
+  .generate-default-grid-proportions(@index + 1);
+}
+
+// Items for breakpoint values (large etc.)
 // (IE. .block-grid-large-2 > li  { width: 50%; } …)
 
-.generate-grid-item-proportions(@size, @index: 2) when (@index < (@max-columns + 1)) {
+.generate-breakpoints-grid-proportions(@size, @index: 2) when (@index < (@max-columns + 1)) {
   &.block-grid-@{size}-@{index} > li,
   &.block-grid-@{size}-@{index} > .block-grid-item {
     .block-grid-item-proportion(@index);
   }
 
-  .generate-grid-item-proportions(@size, @index + 1);
+  .generate-breakpoints-grid-proportions(@size, @index + 1);
 }
 
 
