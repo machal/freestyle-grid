@@ -7,9 +7,17 @@ grid columns. Than you need irregular grid. Freestyle grid.
 
 ## Table of Contents
 
+* [Installation](#installation)
 * [Examples](#examples)
 * [Configuration](#configuration)
 * [IE8 & old browsers support](#ie8-old-browsers-support)
+
+## Installation
+
+```
+bower install freestyle-grid
+```
+
 
 ## Examples
 
