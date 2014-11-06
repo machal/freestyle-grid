@@ -1,0 +1,29 @@
+{
+  "name": "freestyle-grid",
+  "version": "0.5",
+  "homepage": "https://github.com/machal/freestyle-grid",
+  "authors": [
+    "Martin Michálek<martin@vzhurudolu.cz>"
+  ],
+  "description": "LESS CSS Layout module for fluid and responsive, but irregular grid. Suitable for non-layout grids such as thumbnails. Based on Block Grid component from Foundation framework.",
+  "main": "css/freestyle-grid.css",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "less",
+    "css",
+    "grid",
+    "foundation",
+    "layout",
+    "responsive"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
