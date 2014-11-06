@@ -16,7 +16,7 @@ grid columns. Than you need irregular grid. Freestyle grid.
 ### 1st example: 1/3 layout
 
 ```html
-<ul class="block-grid block-grid-3">
+<ul class="fgrid fgrid-3">
   <li>1) Lorem Ipsum…</li>
   <li>2) Lorem Ipsum…</li>
   <li>3) Lorem Ipsum…</li>
@@ -29,7 +29,7 @@ grid columns. Than you need irregular grid. Freestyle grid.
 ### 2nd example: 1/3 layout + 1/6 on large displays
 
 ```html
-<ul class="block-grid block-grid-3 block-grid-large-6">
+<ul class="fgrid fgrid-3 fgrid-large-6">
   <li>1) Lorem Ipsum…</li>
   <li>2) Lorem Ipsum…</li>
   <li>3) Lorem Ipsum…</li>
@@ -41,14 +41,14 @@ grid columns. Than you need irregular grid. Freestyle grid.
 
 ### `ul`/`li` markup is not required
 
-If you don't want `ul`/`li` markup, use classes `.block-grid` for the parent and `.block-grid-item` for grid items on any element you want:
+If you don't want `ul`/`li` markup, use classes `.fgrid` for the parent and `.fgrid-item` for grid items on any element you want:
 
 
 ```html
-<div class="block-grid block-grid-3">
-  <div class="block-grid-item">1) Lorem Ipsum…</div>
-  <div class="block-grid-item">2) Lorem Ipsum…</div>
-  <div class="block-grid-item">3) Lorem Ipsum…</div>
+<div class="fgrid fgrid-3">
+  <div class="fgrid-item">1) Lorem Ipsum…</div>
+  <div class="fgrid-item">2) Lorem Ipsum…</div>
+  <div class="fgrid-item">3) Lorem Ipsum…</div>
 </div>
 ```
 
@@ -57,7 +57,7 @@ If you don't want `ul`/`li` markup, use classes `.block-grid` for the parent and
 You are welcome to use LESS variables:
 
 ```
-@include-html-classes:  true;   // Generate .block-grid-X classes or use your own?
+@include-html-classes:  true;   // Generate .fgrid-X classes or use your own?
 @gutter-width:          14px;   // Gutter between grid columns
 @max-columns:           12;     // Maximum number of columns you use on your project
 @small-start:           500px;  // Start of small screen. Set tu 0 if you don't want Media Query for that

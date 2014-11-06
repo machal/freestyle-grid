@@ -20,17 +20,17 @@
 
 // --- 2. CSS ---
 
-.block-grid when (@include-html-classes) {
+.fgrid when (@include-html-classes) {
 
   // Row
 
-  .block-grid-row();
+  .fgrid-row();
 
   // Items
 
   > li,
-  .block-grid-item {
-    .block-grid-item-base();
+  .fgrid-item {
+    .fgrid-item-base();
   }
 
   // Items proportions
@@ -47,13 +47,13 @@
 
 // Rows and columns CSS
 
-.block-grid-row() {
+.fgrid-row() {
   margin: 0 0 0 -(@gutter-width/2);
   padding: 0;
   .clearfix;
 }
 
-.block-grid-item-base() {
+.fgrid-item-base() {
   box-sizing: border-box;
   float: left;
   padding: 0 @gutter-width/2;
@@ -61,7 +61,7 @@
   list-style-type: none;
 }
 
-.block-grid-item-proportion(@items-per-row) {
+.fgrid-item-proportion(@items-per-row) {
   width: percentage(1/@items-per-row);
   padding-right: @gutter-width/2;
   clear: none;
@@ -79,24 +79,24 @@
 // --- 4. Grid item proportions generator ---
 
 // Items for default values
-// (IE. .block-grid-2 > li  { width: 50%; } …)
+// (IE. .fgrid-2 > li  { width: 50%; } …)
 
 .generate-default-grid-proportions(@index: 2) when (@index < (@max-columns + 1)) {
-  &.block-grid-@{index} > li,
-  &.block-grid-@{index} > .block-grid-item {
-    .block-grid-item-proportion(@index);
+  &.fgrid-@{index} > li,
+  &.fgrid-@{index} > .fgrid-item {
+    .fgrid-item-proportion(@index);
   }
 
   .generate-default-grid-proportions(@index + 1);
 }
 
 // Items for breakpoint values (large etc.)
-// (IE. .block-grid-large-2 > li  { width: 50%; } …)
+// (IE. .fgrid-large-2 > li  { width: 50%; } …)
 
 .generate-breakpoints-grid-proportions(@size, @index: 2) when (@index < (@max-columns + 1)) {
-  &.block-grid-@{size}-@{index} > li,
-  &.block-grid-@{size}-@{index} > .block-grid-item {
-    .block-grid-item-proportion(@index);
+  &.fgrid-@{size}-@{index} > li,
+  &.fgrid-@{size}-@{index} > .fgrid-item {
+    .fgrid-item-proportion(@index);
   }
 
   .generate-breakpoints-grid-proportions(@size, @index + 1);
