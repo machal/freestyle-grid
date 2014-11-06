@@ -1,13 +1,17 @@
-# Block Grid for LESS CSS
+# Freestyle Grid
 
-**Layout module for irregular grid. Suitable for non-layout grids such as thumbnails. 
-Based on [Block Grid](http://foundation.zurb.com/docs/components/block_grid.html) component from Foundation framework.**
+**LESS CSS Layout module for fluid and responsive, but irregular grid. Suitable for non-layout grids such as thumbnails. Based on [Block Grid](http://foundation.zurb.com/docs/components/block_grid.html) component from Foundation framework.**
 
-Regular grid like [the one from Bootstrap](http://getbootstrap.com/css/#grid) is great but suitable for layouts only. If your UI component
-needs uncommon layout, you want block grid. Sometimes 3, sometimes 5 sometimes 11 
-grid columns. Block grid is solution for you.
+Regular grids like [the one from Bootstrap](http://getbootstrap.com/css/#grid) are great for page layout. Sometimes your UI component needs uncommon layout – 3, 5 or 11
+grid columns. Than you need irregular grid. Freestyle grid.
 
-# Examples
+## Table of Contents
+
+* [Examples](#examples)
+* [Configuration](#configuration)
+* [IE8 & old browsers support](#ie8-old-browsers-support)
+
+## Examples
 
 ### 1st example: 1/3 layout
 
@@ -21,7 +25,6 @@ grid columns. Block grid is solution for you.
   <li>6) Lorem Ipsum…</li>
 </ul>
 ```
-
 
 ### 2nd example: 1/3 layout + 1/6 on large displays
 
@@ -49,7 +52,7 @@ If you don't want `ul`/`li` markup, use classes `.block-grid` for the parent and
 </div>
 ```
 
-# Configuration
+## Configuration
 
 You are welcome to use LESS variables:
 
@@ -61,4 +64,4 @@ You are welcome to use LESS variables:
 @large-start:           800px;  // Large grid start.
 ```
 
-
+## IE8 & old browsers support
