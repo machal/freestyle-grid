@@ -1,5 +1,5 @@
 {
-  "name": "less-block-grid",
+  "name": "freestyle-grid",
   "version": "0.0.0",
   "description": "Block Grid for LESS CSS",
   "main": "Gruntfile.js",
@@ -13,9 +13,9 @@
   "author": "Martin Michalek",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/machal/less-block-grid/issues"
+    "url": "https://github.com/machal/freestyle-grid/issues"
   },
-  "homepage": "https://github.com/machal/less-block-grid",
+  "homepage": "https://github.com/machal/freestyle-grid",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-less": "^0.12.0",

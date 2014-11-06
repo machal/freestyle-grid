@@ -23,11 +23,11 @@
 .block-grid when (@include-html-classes) {
 
   // Row
-  
+
   .block-grid-row();
 
   // Items
-  
+
   > li,
   .block-grid-item {
     .block-grid-item-base();
@@ -36,7 +36,7 @@
   // Items proportions
 
   .generate-default-grid-proportions();
-  
+
   @media screen and (min-width: @large-grid-start) {
     .generate-breakpoints-grid-proportions(large);
   };
@@ -50,7 +50,7 @@
 .block-grid-row() {
   margin: 0 0 0 -(@gutter-width/2);
   padding: 0;
-  .clearfix; 
+  .clearfix;
 }
 
 .block-grid-item-base() {
@@ -111,7 +111,7 @@
 .clearfix() {
   &:before,
   &:after {
-    content: " "; 
+    content: " ";
     display: table;
   }
   &:after {

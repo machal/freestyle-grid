@@ -1,17 +1,17 @@
 module.exports = function(grunt) {
 
-  grunt.initConfig({   
+  grunt.initConfig({
 
   	less: {
 	  	development: {
 		    files: {
-		      "css/less-block-grid.css": "less/less-block-grid.less"
+		      "css/freestyle-grid.css": "less/freestyle-grid.less"
 		    }
 	  	}
 	},
 
     watch: {
-      files: ['less/less-block-grid.less'],
+      files: ['less/freestyle-grid.less'],
       tasks: ['less']
     }
 
