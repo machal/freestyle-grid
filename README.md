@@ -26,7 +26,7 @@ grid columns. Than you need irregular grid. Freestyle grid.
 </ul>
 ```
 
-### 2nd example: 1/3 layout + 1/6 on large displays
+### 2nd example: 1/3 layout and 1/6 on large displays
 
 ```html
 <ul class="fgrid fgrid-3 fgrid-large-6">
