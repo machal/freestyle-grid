@@ -28,7 +28,6 @@
 
   // Items
 
-  > li,
   .fgrid-item {
     .fgrid-item-base();
   }
@@ -79,11 +78,10 @@
 // --- 4. Grid item proportions generator ---
 
 // Items for default values
-// (IE. .fgrid-2 > li  { width: 50%; } …)
+// (IE. .fgrid-2 > .fgrid-item  { width: 50%; } …)
 
 .generate-default-grid-proportions(@index: 2) when (@index < (@max-columns + 1)) {
-  &.fgrid-@{index} > li,
-  &.fgrid-@{index} > .fgrid-item {
+  &-@{index} > &-item {
     .fgrid-item-proportion(@index);
   }
 
@@ -91,11 +89,10 @@
 }
 
 // Items for breakpoint values (large etc.)
-// (IE. .fgrid-large-2 > li  { width: 50%; } …)
+// (IE. .fgrid-large-2 > .fgrid-item  { width: 50%; } …)
 
 .generate-breakpoints-grid-proportions(@size, @index: 2) when (@index < (@max-columns + 1)) {
-  &.fgrid-@{size}-@{index} > li,
-  &.fgrid-@{size}-@{index} > .fgrid-item {
+  &-@{size}-@{index} > &-item {
     .fgrid-item-proportion(@index);
   }
 
