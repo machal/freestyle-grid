@@ -20,26 +20,29 @@
 
 // --- 2. CSS ---
 
+// Row
 .fgrid when (@include-html-classes) {
-
-  // Row
-
   .fgrid-row();
+}
 
-  // Items
+// Items
+.fgrid-item when (@include-html-classes) {
+  .fgrid-item-base();
+}
 
-  .fgrid-item {
-    .fgrid-item-base();
-  }
 
-  // Items proportions
-
+// Items proportions
+.fgrid when (@include-html-classes) {
   .generate-default-grid-proportions();
+}
 
+// Items proportions for large displays
+.fgrid when (@include-html-classes) {
   @media screen and (min-width: @large-grid-start) {
     .generate-breakpoints-grid-proportions(large);
-  };
+  }
 }
+
 
 
 // --- 3. Mixins ---
@@ -67,6 +70,11 @@
 
   &:nth-of-type(@{items-per-row}n) {
     padding-right: 0;
+  }
+
+
+  &:nth-of-type(1n) {
+    clear: none;
   }
 
   &:nth-of-type(@{items-per-row}n+1) {

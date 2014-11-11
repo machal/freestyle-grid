@@ -10,7 +10,7 @@
 .fgrid:after {
   clear: both;
 }
-.fgrid .fgrid-item {
+.fgrid-item {
   box-sizing: border-box;
   float: left;
   padding: 0 7px;
@@ -25,6 +25,9 @@
 .fgrid-2 > .fgrid-item:nth-of-type(2n) {
   padding-right: 0;
 }
+.fgrid-2 > .fgrid-item:nth-of-type(1n) {
+  clear: none;
+}
 .fgrid-2 > .fgrid-item:nth-of-type(2n + 1) {
   clear: left;
 }
@@ -35,6 +38,9 @@
 }
 .fgrid-3 > .fgrid-item:nth-of-type(3n) {
   padding-right: 0;
+}
+.fgrid-3 > .fgrid-item:nth-of-type(1n) {
+  clear: none;
 }
 .fgrid-3 > .fgrid-item:nth-of-type(3n + 1) {
   clear: left;
@@ -47,6 +53,9 @@
 .fgrid-4 > .fgrid-item:nth-of-type(4n) {
   padding-right: 0;
 }
+.fgrid-4 > .fgrid-item:nth-of-type(1n) {
+  clear: none;
+}
 .fgrid-4 > .fgrid-item:nth-of-type(4n + 1) {
   clear: left;
 }
@@ -57,6 +66,9 @@
 }
 .fgrid-5 > .fgrid-item:nth-of-type(5n) {
   padding-right: 0;
+}
+.fgrid-5 > .fgrid-item:nth-of-type(1n) {
+  clear: none;
 }
 .fgrid-5 > .fgrid-item:nth-of-type(5n + 1) {
   clear: left;
@@ -69,6 +81,9 @@
 .fgrid-6 > .fgrid-item:nth-of-type(6n) {
   padding-right: 0;
 }
+.fgrid-6 > .fgrid-item:nth-of-type(1n) {
+  clear: none;
+}
 .fgrid-6 > .fgrid-item:nth-of-type(6n + 1) {
   clear: left;
 }
@@ -79,6 +94,9 @@
 }
 .fgrid-7 > .fgrid-item:nth-of-type(7n) {
   padding-right: 0;
+}
+.fgrid-7 > .fgrid-item:nth-of-type(1n) {
+  clear: none;
 }
 .fgrid-7 > .fgrid-item:nth-of-type(7n + 1) {
   clear: left;
@@ -91,6 +109,9 @@
 .fgrid-8 > .fgrid-item:nth-of-type(8n) {
   padding-right: 0;
 }
+.fgrid-8 > .fgrid-item:nth-of-type(1n) {
+  clear: none;
+}
 .fgrid-8 > .fgrid-item:nth-of-type(8n + 1) {
   clear: left;
 }
@@ -101,6 +122,9 @@
 }
 .fgrid-9 > .fgrid-item:nth-of-type(9n) {
   padding-right: 0;
+}
+.fgrid-9 > .fgrid-item:nth-of-type(1n) {
+  clear: none;
 }
 .fgrid-9 > .fgrid-item:nth-of-type(9n + 1) {
   clear: left;
@@ -113,6 +137,9 @@
 .fgrid-10 > .fgrid-item:nth-of-type(10n) {
   padding-right: 0;
 }
+.fgrid-10 > .fgrid-item:nth-of-type(1n) {
+  clear: none;
+}
 .fgrid-10 > .fgrid-item:nth-of-type(10n + 1) {
   clear: left;
 }
@@ -124,6 +151,9 @@
 .fgrid-11 > .fgrid-item:nth-of-type(11n) {
   padding-right: 0;
 }
+.fgrid-11 > .fgrid-item:nth-of-type(1n) {
+  clear: none;
+}
 .fgrid-11 > .fgrid-item:nth-of-type(11n + 1) {
   clear: left;
 }
@@ -134,6 +164,9 @@
 }
 .fgrid-12 > .fgrid-item:nth-of-type(12n) {
   padding-right: 0;
+}
+.fgrid-12 > .fgrid-item:nth-of-type(1n) {
+  clear: none;
 }
 .fgrid-12 > .fgrid-item:nth-of-type(12n + 1) {
   clear: left;
@@ -147,6 +180,9 @@
   .fgrid-large-2 > .fgrid-item:nth-of-type(2n) {
     padding-right: 0;
   }
+  .fgrid-large-2 > .fgrid-item:nth-of-type(1n) {
+    clear: none;
+  }
   .fgrid-large-2 > .fgrid-item:nth-of-type(2n + 1) {
     clear: left;
   }
@@ -157,6 +193,9 @@
   }
   .fgrid-large-3 > .fgrid-item:nth-of-type(3n) {
     padding-right: 0;
+  }
+  .fgrid-large-3 > .fgrid-item:nth-of-type(1n) {
+    clear: none;
   }
   .fgrid-large-3 > .fgrid-item:nth-of-type(3n + 1) {
     clear: left;
@@ -169,6 +208,9 @@
   .fgrid-large-4 > .fgrid-item:nth-of-type(4n) {
     padding-right: 0;
   }
+  .fgrid-large-4 > .fgrid-item:nth-of-type(1n) {
+    clear: none;
+  }
   .fgrid-large-4 > .fgrid-item:nth-of-type(4n + 1) {
     clear: left;
   }
@@ -179,6 +221,9 @@
   }
   .fgrid-large-5 > .fgrid-item:nth-of-type(5n) {
     padding-right: 0;
+  }
+  .fgrid-large-5 > .fgrid-item:nth-of-type(1n) {
+    clear: none;
   }
   .fgrid-large-5 > .fgrid-item:nth-of-type(5n + 1) {
     clear: left;
@@ -191,6 +236,9 @@
   .fgrid-large-6 > .fgrid-item:nth-of-type(6n) {
     padding-right: 0;
   }
+  .fgrid-large-6 > .fgrid-item:nth-of-type(1n) {
+    clear: none;
+  }
   .fgrid-large-6 > .fgrid-item:nth-of-type(6n + 1) {
     clear: left;
   }
@@ -201,6 +249,9 @@
   }
   .fgrid-large-7 > .fgrid-item:nth-of-type(7n) {
     padding-right: 0;
+  }
+  .fgrid-large-7 > .fgrid-item:nth-of-type(1n) {
+    clear: none;
   }
   .fgrid-large-7 > .fgrid-item:nth-of-type(7n + 1) {
     clear: left;
@@ -213,6 +264,9 @@
   .fgrid-large-8 > .fgrid-item:nth-of-type(8n) {
     padding-right: 0;
   }
+  .fgrid-large-8 > .fgrid-item:nth-of-type(1n) {
+    clear: none;
+  }
   .fgrid-large-8 > .fgrid-item:nth-of-type(8n + 1) {
     clear: left;
   }
@@ -223,6 +277,9 @@
   }
   .fgrid-large-9 > .fgrid-item:nth-of-type(9n) {
     padding-right: 0;
+  }
+  .fgrid-large-9 > .fgrid-item:nth-of-type(1n) {
+    clear: none;
   }
   .fgrid-large-9 > .fgrid-item:nth-of-type(9n + 1) {
     clear: left;
@@ -235,6 +292,9 @@
   .fgrid-large-10 > .fgrid-item:nth-of-type(10n) {
     padding-right: 0;
   }
+  .fgrid-large-10 > .fgrid-item:nth-of-type(1n) {
+    clear: none;
+  }
   .fgrid-large-10 > .fgrid-item:nth-of-type(10n + 1) {
     clear: left;
   }
@@ -246,6 +306,9 @@
   .fgrid-large-11 > .fgrid-item:nth-of-type(11n) {
     padding-right: 0;
   }
+  .fgrid-large-11 > .fgrid-item:nth-of-type(1n) {
+    clear: none;
+  }
   .fgrid-large-11 > .fgrid-item:nth-of-type(11n + 1) {
     clear: left;
   }
@@ -256,6 +319,9 @@
   }
   .fgrid-large-12 > .fgrid-item:nth-of-type(12n) {
     padding-right: 0;
+  }
+  .fgrid-large-12 > .fgrid-item:nth-of-type(1n) {
+    clear: none;
   }
   .fgrid-large-12 > .fgrid-item:nth-of-type(12n + 1) {
     clear: left;
