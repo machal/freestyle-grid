@@ -22,45 +22,37 @@ bower install freestyle-grid
 
 ## Examples
 
-### 1st example: 1/3 layout
+### 1st example: 1/3 layout everywhere
 
 ```html
 <ul class="fgrid fgrid-3">
-  <li class="fgrid-item">1) Lorem Ipsum…</li>
-  <li class="fgrid-item">2) Lorem Ipsum…</li>
-  <li class="fgrid-item">3) Lorem Ipsum…</li>
-  <li class="fgrid-item">4) Lorem Ipsum…</li>
-  <li class="fgrid-item">5) Lorem Ipsum…</li>
-  <li class="fgrid-item">6) Lorem Ipsum…</li>
+  <p class="fgrid-item">Lorem Ipsum…</p>
+  …
 </ul>
 ```
 
-### 2nd example: 1/3 layout and 1/6 on large displays
+### 2nd example: 1/2 layout on small &amp; 1/5 on large displays
 
 ```html
-<div class="fgrid fgrid-3 fgrid-large-6">
-  <p class="fgrid-item">1) Lorem Ipsum…</p>
-  <p class="fgrid-item">2) Lorem Ipsum…</p>
-  <p class="fgrid-item">3) Lorem Ipsum…</p>
-  <p class="fgrid-item">4) Lorem Ipsum…</p>
-  <p class="fgrid-item">5) Lorem Ipsum…</p>
-  <p class="fgrid-item">6) Lorem Ipsum…</p>
+<div class="fgrid fgrid-small-2 fgrid-large-5">
+  <p class="fgrid-item">Lorem Ipsum…</p>
+  …
 </div>
 ```
 
-Note: `ul`/`li` markup is not required.
+Note: `ul`/`li` markup not required.
 
 
 ## Configuration
 
 You are welcome to use LESS variables:
 
-```less
+```
 @include-html-classes:  true;   // Generate .fgrid-X classes or use your own?
 @gutter-width:          14px;   // Gutter between grid columns
 @max-columns:           12;     // Maximum number of columns you use on your project
-@small-start:           500px;  // Start of small screen. Set tu 0 if you don't want Media Query for that
-@large-start:           800px;  // Large grid start.
+@small-grid-start:      640px;  // Small screen breakpoint.
+@large-grid-start:      1025px; // Large screen breakpoint.
 ```
 
 ## IE8 & old browsers support
