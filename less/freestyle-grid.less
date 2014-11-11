@@ -14,7 +14,7 @@
 @include-html-classes:  true;
 @gutter-width:          14px;
 @max-columns:           12;
-@grid-start:            600px;
+@small-grid-start:      640px;
 @large-grid-start:      1025px;
 
 
@@ -34,6 +34,13 @@
 // Items proportions
 .fgrid when (@include-html-classes) {
   .generate-default-grid-proportions();
+}
+
+// Items proportions for small displays
+.fgrid when (@include-html-classes) {
+  @media screen and (min-width: @small-grid-start) and (max-width: (@large-grid-start - 1px)) {
+    .generate-breakpoints-grid-proportions(small);
+  }
 }
 
 // Items proportions for large displays
