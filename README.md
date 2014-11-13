@@ -20,7 +20,7 @@ bower install freestyle-grid
 ```
 
 
-## Examples
+## Examples &amp; demos
 
 ### 1st example: 1/3 layout everywhere
 
@@ -31,6 +31,10 @@ bower install freestyle-grid
 </ul>
 ```
 
+![Simple demo](demo/assets/fgrid-simple.jpg?raw=true)
+
+You can try [in your browser](http://www.vzhurudolu.cz/data/projects/freestyle-grid/demo/simple.html).
+
 ### 2nd example: 1/2 layout on small &amp; 1/5 on large displays
 
 ```html
@@ -40,8 +44,25 @@ bower install freestyle-grid
 </div>
 ```
 
-Note: `ul`/`li` markup not required.
+Note: `ul`/`li` markup is not required.
 
+![Small/Large demo](demo/assets/fgrid-small-large.jpg?raw=true)
+
+You can try [in your browser](http://www.vzhurudolu.cz/data/projects/freestyle-grid/demo/small-large.html).
+
+
+### 3rd example: 1/2 layout on small &amp; 1/5 on large displays with thumbnails
+
+```html
+<ul class="fgrid fgrid-small-2 fgrid-large-5">
+  <li class="fgrid-item"><img …></li>
+  …
+</ul>
+```
+
+![Thumbnails demo](demo/assets/fgrid-thumbnails.jpg?raw=true)
+
+You can try [in your browser](http://www.vzhurudolu.cz/data/projects/freestyle-grid/demo/thumbnails.html).
 
 ## Configuration
 
