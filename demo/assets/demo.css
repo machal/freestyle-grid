@@ -1,0 +1,80 @@
+/*
+Freestyle Grid DEMO Stylesheet
+
+Freestyle Grid: https://github.com/machal/freestyle-grid
+
+Color scheme: http://coolors.co/c3b78f-c09086-ffd9ba-863e6c-29283e
+
+Author: Martin Michalek, martin@vzhurudolu.cz
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:800italic,400&subset=latin,latin-ext);
+
+html {
+  font-size: 1.25em;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 1em;
+  }
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 1em 5em 5em;
+  color: #29283E;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+}
+
+code,
+a {
+  color: #863E6C;
+}
+
+h1 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 3em;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+/* Responsive images */
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Page backgrounds */
+
+.bg-1 {
+  background: #C3B78F;
+}
+
+.bg-2 {
+  background: #C09086;
+}
+
+.bg-3 {
+  background: #ffd9ba;
+}
+
+/* Thumbnails */
+
+.thumbnail {
+  margin-bottom: 1em;
+}
