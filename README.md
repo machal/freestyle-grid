@@ -11,7 +11,8 @@ Freestyle Grid is LESS layout module for fluid and responsive – but irregular 
 * [Installation](#installation)
 * [Examples](#examples)
 * [Configuration](#configuration)
-* [IE8 support](#ie8-old-browsers-support)
+* [IE8 support](#ie8-support)
+* [Author and licence](#author-and-licence)
 
 
 ## Installation
@@ -82,7 +83,7 @@ You are welcome to change Freestyle Grid behavior with [LESS variables](less/fre
 
 IE8- doesn't support Media Queries so you need to use [Respond.js](https://github.com/scottjehl/Respond) polyfill.
 
-And if your grid items (`.fgrid-item`) are of unequal height, than you have to add `<div class="clearfix">` when startin new layout row. This is because IE8 and lower versions lacks `:nth-of-type` support.
+And if your grid items (`.fgrid-item`) are of unequal height, then you have to add `<div class="clearfix">` when starting new layout row. This is because IE8 and lower versions lacks `:nth-of-type` support.
 
 So the IE8 simplified markup looks like this:
 
@@ -99,8 +100,9 @@ So the IE8 simplified markup looks like this:
 <body>
   <ul class="fgrid fgrid-small-2 fgrid-large-5">
     <li class="fgrid-item"><img …></li>
-    <li class="fgrid-item"><img …></li>
+    …
     <!--[if lt IE 9]><div class="clearfix"></div><![endif]-->
+    …
   </ul>
 </body>
 ```
@@ -108,6 +110,8 @@ So the IE8 simplified markup looks like this:
 [Try it in your browser](http://www.vzhurudolu.cz/data/projects/freestyle-grid/demo/thumbnails-ie8.html).
 
 
-## Authors
+## Author and licence
 
 Made in Prague by Martin Michalek (martin@vzhurudolu.cz).
+
+[MIT licence](http://opensource.org/licenses/mit-license.php).
