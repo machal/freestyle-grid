@@ -11,7 +11,7 @@ Freestyle Grid is LESS layout module for fluid and responsive – but irregular 
 * [Installation](#installation)
 * [Examples](#examples)
 * [Configuration](#configuration)
-* [IE8 & old browsers support](#ie8-old-browsers-support)
+* [IE8 support](#ie8-old-browsers-support)
 
 
 ## Installation
@@ -34,7 +34,7 @@ bower install freestyle-grid
 ```
 ![Simple demo](demo/assets/fgrid-simple.jpg?raw=true)
 
-You can [try it in your browser](http://www.vzhurudolu.cz/data/projects/freestyle-grid/demo/simple.html).
+[Try it in your browser](http://www.vzhurudolu.cz/data/projects/freestyle-grid/demo/simple.html).
 
 Have you noticed that you don't need to write markup for layout row? Yeah – writing layout markup
 with Freestyle Grid is very fast!
@@ -52,7 +52,7 @@ Note: `ul`/`li` markup is not required.
 
 ![Small/Large demo](demo/assets/fgrid-small-large.jpg?raw=true)
 
-You can [try it in your browser](http://www.vzhurudolu.cz/data/projects/freestyle-grid/demo/small-large.html).
+[Try it in your browser](http://www.vzhurudolu.cz/data/projects/freestyle-grid/demo/small-large.html).
 
 
 ### 3rd example: 1/2 layout on small &amp; 1/5 on large displays with thumbnails
@@ -66,7 +66,7 @@ You can [try it in your browser](http://www.vzhurudolu.cz/data/projects/freestyl
 
 ![Thumbnails demo](demo/assets/fgrid-thumbnails.jpg?raw=true)
 
-You can [try it in your browser](http://www.vzhurudolu.cz/data/projects/freestyle-grid/demo/thumbnails.html).
+[Try it in your browser](http://www.vzhurudolu.cz/data/projects/freestyle-grid/demo/thumbnails.html).
 
 
 ## Configuration
@@ -78,7 +78,30 @@ You are welcome to change Freestyle Grid behavior with [LESS variables](less/fre
 * Move breakpoints up or down by changing values of `@small-grid-start` and `@large-grid-start`.
 
 
-## IE8 & old browsers support
+## IE8 support
+
+IE8- doesn't support Media Queries so you need to use [Respond.js](https://github.com/scottjehl/Respond) polyfill.
+
+And if your grid items (`.fgrid-item`) are of unequal height, than you have to add `<div class="clearfix">` when startin new layout row. This is because IE8 and lower versions lacks `:nth-of-type` support.
+
+So the IE8 simplified markup looks like this:
+
+```html
+<head>
+  …
+  <!--[if lt IE 9]><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<body>
+  <ul class="fgrid fgrid-small-2 fgrid-large-5">
+    <li class="fgrid-item"><img …></li>
+    <li class="fgrid-item"><img …></li>
+    <!--[if lt IE 9]><div class="clearfix"></div><![endif]-->
+  </ul>
+</body>
+```
+
+[Try it in your browser](http://www.vzhurudolu.cz/data/projects/freestyle-grid/demo/thumbnails-ie8.html).
+
 
 ## Authors
 
