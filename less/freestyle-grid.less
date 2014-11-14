@@ -61,7 +61,7 @@
 // Rows and columns CSS
 
 .fgrid-row() {
-  margin: 0 0 0 -(@gutter-width/2);
+  margin: 0 -(@gutter-width/2);
   padding: 0;
   .clearfix;
 }
@@ -81,10 +81,6 @@
   &:nth-of-type(1n) {
     clear: none;
     padding-right: @gutter-width/2;
-  }
-
-  &:nth-of-type(@{items-per-row}n) {
-    padding-right: 0;
   }
 
   &:nth-of-type(@{items-per-row}n+1) {
