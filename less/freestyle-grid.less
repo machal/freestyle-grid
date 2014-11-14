@@ -1,6 +1,9 @@
-// LESS CSS Block Grid
-
-// --- Content ---
+// Freestyle Grid
+// --------------------
+//
+// https://github.com/machal/freestyle-grid
+//
+// Content:
 // 1. Variables
 // 2. CSS
 // 3. Mixins
@@ -11,11 +14,12 @@
 
 // --- 1. Variables ---
 
-@include-html-classes:  true;
-@gutter-width:          14px;
-@max-columns:           12;
-@small-grid-start:      640px;
-@large-grid-start:      1025px;
+@include-html-classes:  true;    // Generate .fgrid-X classes or use your own?
+@gutter-width:          14px;    // Gutter between grid columns
+@max-columns:           12;      // Maximum number of columns you use on your project
+@small-grid-start:      640px;   // Small screen breakpoint
+@large-grid-start:      1025px;  // Large screen breakpoint
+
 
 
 // --- 2. CSS ---
@@ -36,14 +40,14 @@
   .generate-default-grid-proportions();
 }
 
-// Items proportions for small displays
+// Items proportions for small screens
 .fgrid when (@include-html-classes) {
   @media screen and (min-width: @small-grid-start) and (max-width: (@large-grid-start - 1px)) {
     .generate-breakpoints-grid-proportions(small);
   }
 }
 
-// Items proportions for large displays
+// Items proportions for large screens
 .fgrid when (@include-html-classes) {
   @media screen and (min-width: @large-grid-start) {
     .generate-breakpoints-grid-proportions(large);
