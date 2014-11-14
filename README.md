@@ -89,7 +89,12 @@ So the IE8 simplified markup looks like this:
 ```html
 <head>
   …
-  <!--[if lt IE 9]><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <style>
+      img { width: auto } /* http://stackoverflow.com/questions/8610077/height-auto-in-internet-explorer-8-and-below */
+    </style>
+  <![endif]-->
 </head>
 <body>
   <ul class="fgrid fgrid-small-2 fgrid-large-5">
