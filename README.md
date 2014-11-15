@@ -1,6 +1,6 @@
 # Freestyle Grid
 
-**Common grids like [the Bootstrap's one](http://getbootstrap.com/css/#grid) are great for regular layout. But sometimes your page or UI component needs uncommon layout – 3, 5 or 11
+**Common grids like [the Bootstrap's one](http://getbootstrap.com/css/#grid) are great for regular layout. But sometimes your page or UI component needs uncommon layout – for example 3, 5 or 11
 grid columns. Then you need irregular grid. Freestyle grid.**
 
 Freestyle Grid is a tiny LESS layout module for fluid and responsive – but irregular – grid. Suitable for non-layout grids such as thumbnails. Great for fast prototyping. Based on the [Block Grid](http://foundation.zurb.com/docs/components/block_grid.html) from Foundation framework.
