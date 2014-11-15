@@ -12,13 +12,13 @@
 }
 .fgrid-item {
   box-sizing: border-box;
-  float: left;
   padding: 0 7px 14px;
   margin: 0;
   list-style-type: none;
 }
 .fgrid-2 > .fgrid-item {
   width: 50%;
+  float: left;
 }
 .fgrid-2 > .fgrid-item:nth-of-type(1n) {
   clear: none;
@@ -29,6 +29,7 @@
 }
 .fgrid-3 > .fgrid-item {
   width: 33.33333333%;
+  float: left;
 }
 .fgrid-3 > .fgrid-item:nth-of-type(1n) {
   clear: none;
@@ -39,6 +40,7 @@
 }
 .fgrid-4 > .fgrid-item {
   width: 25%;
+  float: left;
 }
 .fgrid-4 > .fgrid-item:nth-of-type(1n) {
   clear: none;
@@ -49,6 +51,7 @@
 }
 .fgrid-5 > .fgrid-item {
   width: 20%;
+  float: left;
 }
 .fgrid-5 > .fgrid-item:nth-of-type(1n) {
   clear: none;
@@ -59,6 +62,7 @@
 }
 .fgrid-6 > .fgrid-item {
   width: 16.66666667%;
+  float: left;
 }
 .fgrid-6 > .fgrid-item:nth-of-type(1n) {
   clear: none;
@@ -69,6 +73,7 @@
 }
 .fgrid-7 > .fgrid-item {
   width: 14.28571429%;
+  float: left;
 }
 .fgrid-7 > .fgrid-item:nth-of-type(1n) {
   clear: none;
@@ -79,6 +84,7 @@
 }
 .fgrid-8 > .fgrid-item {
   width: 12.5%;
+  float: left;
 }
 .fgrid-8 > .fgrid-item:nth-of-type(1n) {
   clear: none;
@@ -89,6 +95,7 @@
 }
 .fgrid-9 > .fgrid-item {
   width: 11.11111111%;
+  float: left;
 }
 .fgrid-9 > .fgrid-item:nth-of-type(1n) {
   clear: none;
@@ -99,6 +106,7 @@
 }
 .fgrid-10 > .fgrid-item {
   width: 10%;
+  float: left;
 }
 .fgrid-10 > .fgrid-item:nth-of-type(1n) {
   clear: none;
@@ -109,6 +117,7 @@
 }
 .fgrid-11 > .fgrid-item {
   width: 9.09090909%;
+  float: left;
 }
 .fgrid-11 > .fgrid-item:nth-of-type(1n) {
   clear: none;
@@ -119,6 +128,7 @@
 }
 .fgrid-12 > .fgrid-item {
   width: 8.33333333%;
+  float: left;
 }
 .fgrid-12 > .fgrid-item:nth-of-type(1n) {
   clear: none;
@@ -130,6 +140,7 @@
 @media screen and (min-width: 640px) and (max-width: 1024px) {
   .fgrid-small-2 > .fgrid-item {
     width: 50%;
+    float: left;
   }
   .fgrid-small-2 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -140,6 +151,7 @@
   }
   .fgrid-small-3 > .fgrid-item {
     width: 33.33333333%;
+    float: left;
   }
   .fgrid-small-3 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -150,6 +162,7 @@
   }
   .fgrid-small-4 > .fgrid-item {
     width: 25%;
+    float: left;
   }
   .fgrid-small-4 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -160,6 +173,7 @@
   }
   .fgrid-small-5 > .fgrid-item {
     width: 20%;
+    float: left;
   }
   .fgrid-small-5 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -170,6 +184,7 @@
   }
   .fgrid-small-6 > .fgrid-item {
     width: 16.66666667%;
+    float: left;
   }
   .fgrid-small-6 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -180,6 +195,7 @@
   }
   .fgrid-small-7 > .fgrid-item {
     width: 14.28571429%;
+    float: left;
   }
   .fgrid-small-7 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -190,6 +206,7 @@
   }
   .fgrid-small-8 > .fgrid-item {
     width: 12.5%;
+    float: left;
   }
   .fgrid-small-8 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -200,6 +217,7 @@
   }
   .fgrid-small-9 > .fgrid-item {
     width: 11.11111111%;
+    float: left;
   }
   .fgrid-small-9 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -210,6 +228,7 @@
   }
   .fgrid-small-10 > .fgrid-item {
     width: 10%;
+    float: left;
   }
   .fgrid-small-10 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -220,6 +239,7 @@
   }
   .fgrid-small-11 > .fgrid-item {
     width: 9.09090909%;
+    float: left;
   }
   .fgrid-small-11 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -230,6 +250,7 @@
   }
   .fgrid-small-12 > .fgrid-item {
     width: 8.33333333%;
+    float: left;
   }
   .fgrid-small-12 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -242,6 +263,7 @@
 @media screen and (min-width: 1025px) {
   .fgrid-large-2 > .fgrid-item {
     width: 50%;
+    float: left;
   }
   .fgrid-large-2 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -252,6 +274,7 @@
   }
   .fgrid-large-3 > .fgrid-item {
     width: 33.33333333%;
+    float: left;
   }
   .fgrid-large-3 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -262,6 +285,7 @@
   }
   .fgrid-large-4 > .fgrid-item {
     width: 25%;
+    float: left;
   }
   .fgrid-large-4 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -272,6 +296,7 @@
   }
   .fgrid-large-5 > .fgrid-item {
     width: 20%;
+    float: left;
   }
   .fgrid-large-5 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -282,6 +307,7 @@
   }
   .fgrid-large-6 > .fgrid-item {
     width: 16.66666667%;
+    float: left;
   }
   .fgrid-large-6 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -292,6 +318,7 @@
   }
   .fgrid-large-7 > .fgrid-item {
     width: 14.28571429%;
+    float: left;
   }
   .fgrid-large-7 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -302,6 +329,7 @@
   }
   .fgrid-large-8 > .fgrid-item {
     width: 12.5%;
+    float: left;
   }
   .fgrid-large-8 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -312,6 +340,7 @@
   }
   .fgrid-large-9 > .fgrid-item {
     width: 11.11111111%;
+    float: left;
   }
   .fgrid-large-9 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -322,6 +351,7 @@
   }
   .fgrid-large-10 > .fgrid-item {
     width: 10%;
+    float: left;
   }
   .fgrid-large-10 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -332,6 +362,7 @@
   }
   .fgrid-large-11 > .fgrid-item {
     width: 9.09090909%;
+    float: left;
   }
   .fgrid-large-11 > .fgrid-item:nth-of-type(1n) {
     clear: none;
@@ -342,6 +373,7 @@
   }
   .fgrid-large-12 > .fgrid-item {
     width: 8.33333333%;
+    float: left;
   }
   .fgrid-large-12 > .fgrid-item:nth-of-type(1n) {
     clear: none;
