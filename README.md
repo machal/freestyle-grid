@@ -21,6 +21,7 @@ Freestyle Grid is a tiny LESS layout module for fluid and responsive – but irr
 bower install freestyle-grid
 ```
 
+Of course, you can use [compiled CSS](css/) files only.
 
 ## Examples &amp; demos
 
