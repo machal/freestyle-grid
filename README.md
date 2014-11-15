@@ -3,10 +3,10 @@
 **Common grids like [the Bootstrap's one](http://getbootstrap.com/css/#grid) are great for regular layout. But sometimes your page or UI component needs uncommon layout – 3, 5 or 11
 grid columns. Then you need irregular grid. Freestyle grid.**
 
-Freestyle Grid is LESS layout module for fluid and responsive – but irregular – grid. Suitable for non-layout grids such as thumbnails. Great for fast prototyping. Based on the [Block Grid](http://foundation.zurb.com/docs/components/block_grid.html) from Foundation framework.
+Freestyle Grid is a tiny LESS layout module for fluid and responsive – but irregular – grid. Suitable for non-layout grids such as thumbnails. Great for fast prototyping. Based on the [Block Grid](http://foundation.zurb.com/docs/components/block_grid.html) from Foundation framework.
 
 
-## Table of Contents
+## Table of contents
 
 * [Installation](#installation)
 * [Examples](#examples)
@@ -37,13 +37,13 @@ bower install freestyle-grid
 
 [Try it in your browser](http://www.vzhurudolu.cz/data/projects/freestyle-grid/demo/simple.html).
 
-Have you noticed that you don't need to write markup for layout row? Yeah – writing layout markup
-with Freestyle Grid is very fast!
+Have you noticed that you don't need to write markup for layout row? Yes, writing layout markup
+with Freestyle Grid is really fast.
 
-### 2nd example: 1/2 layout on small &amp; 1/5 on large displays
+### 2nd example: 1/3 layout on small &amp; 1/6 on large displays
 
 ```html
-<div class="fgrid fgrid-small-2 fgrid-large-5">
+<div class="fgrid fgrid-small-3 fgrid-large-6">
   <p class="fgrid-item">Lorem Ipsum…</p>
   …
 </div>
