@@ -24,36 +24,32 @@
 
 // --- 2. CSS ---
 
-// Row
-.fgrid when (@include-html-classes) {
-  .fgrid-row();
-}
+& when (@include-html-classes) {
+  // Row
+  .fgrid {
+    .fgrid-row();
+  }
 
-// Items
-.fgrid-item when (@include-html-classes) {
-  .fgrid-item-base();
-}
+  // Items
+  .fgrid-item {
+    .fgrid-item-base();
+  }
 
+  // Items proportions
+  .fgrid {
+    .generate-default-grid-proportions();
 
-// Items proportions
-.fgrid when (@include-html-classes) {
-  .generate-default-grid-proportions();
-}
+    // Items proportions for small screens
+    @media screen and (min-width: @small-grid-start) and (max-width: (@large-grid-start - 1px)) {
+      .generate-breakpoints-grid-proportions(small);
+    }
 
-// Items proportions for small screens
-.fgrid when (@include-html-classes) {
-  @media screen and (min-width: @small-grid-start) and (max-width: (@large-grid-start - 1px)) {
-    .generate-breakpoints-grid-proportions(small);
+    // Items proportions for large screens
+    @media screen and (min-width: @large-grid-start) {
+      .generate-breakpoints-grid-proportions(large);
+    }
   }
 }
-
-// Items proportions for large screens
-.fgrid when (@include-html-classes) {
-  @media screen and (min-width: @large-grid-start) {
-    .generate-breakpoints-grid-proportions(large);
-  }
-}
-
 
 
 // --- 3. Mixins ---
@@ -77,10 +73,9 @@
   width: percentage(1/@items-per-row);
   float: left;
 
-  // Clearing and padding has to be here due to specificity
+  // Clearing has to be here due to specificity
   &:nth-of-type(1n) {
     clear: none;
-    padding-right: @gutter-width/2;
   }
 
   &:nth-of-type(@{items-per-row}n+1) {
