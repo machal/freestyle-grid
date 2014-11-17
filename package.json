@@ -1,6 +1,6 @@
 {
   "name": "freestyle-grid",
-  "version": "0.0.0",
+  "version": "0.5.0",
   "description": "Block Grid for LESS CSS",
   "main": "Gruntfile.js",
   "scripts": {
