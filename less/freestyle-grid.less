@@ -73,10 +73,9 @@
   width: percentage(1/@items-per-row);
   float: left;
 
-  // Clearing and padding has to be here due to specificity
+  // Clearing has to be here due to specificity
   &:nth-of-type(1n) {
     clear: none;
-    padding-right: @gutter-width/2;
   }
 
   &:nth-of-type(@{items-per-row}n+1) {
