@@ -30,7 +30,7 @@ Of course, you can use [compiled CSS](css/) files only.
 
 ```html
 <ul class="fgrid fgrid-3">
-  <p class="fgrid-item">Lorem Ipsum…</p>
+  <li class="fgrid-item">Lorem Ipsum…</li>
   …
 </ul>
 ```
