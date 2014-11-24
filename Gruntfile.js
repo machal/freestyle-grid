@@ -6,7 +6,8 @@ module.exports = function(grunt) {
   	less: {
 	  	development: {
 		    files: {
-		      'css/freestyle-grid.css': 'less/freestyle-grid.less'
+		      'css/freestyle-grid.css': 'less/freestyle-grid.less',
+          'demo/assets/demo-bootstrap.css': 'demo/assets/demo-bootstrap.less',
 		    }
 	  	}
 	  },
@@ -25,7 +26,7 @@ module.exports = function(grunt) {
 
     // Watch LESS file and fire compilation on its change
     watch: {
-      files: ['less/freestyle-grid.less'],
+      files: ['less/freestyle-grid.less', 'demo/assets/demo-bootstrap.less'],
       tasks: ['less', 'cssmin']
     }
 
