@@ -1,4 +1,6 @@
 
+// --- Let's import everything ---
+
 // Bootstrap
 @import "../../bower_components/bootstrap/less/bootstrap.less";
 
@@ -7,3 +9,60 @@
 
 // Demo styles
 @import (less) "demo.css";
+
+
+
+// --- Freestyle Grid for Bootstrap ---
+
+
+// - 1) Configure Freestyle Grid -
+
+@fgrid-include-html-classes:  true;                  // We don't need FG own HTML classes -
+@fgrid-gutter-width:          @grid-gutter-width;    // Gutter between grid columns
+@fgrid-max-columns:           @grid-columns;         // Maximum number of columns you use on your project
+
+
+// - 2) Let's build HTML classes for Bootstrap -
+
+// Row
+.fgrid {
+  .fgrid-row();
+}
+
+// Items
+.fgrid-item {
+  .fgrid-item-base();
+}
+
+// Items proportions
+
+// Based od Bootstrap's breakpoints:
+// @screen-xs-min
+// @screen-sm-min
+// @screen-md-min
+// @screen-lg-min
+
+.fgrid {
+
+  .generate-default-grid-proportions();
+
+  // Items proportions for extra small screens
+  @media screen and (min-width: @screen-xs-min) and (max-width: @screen-xs-max) {
+    .generate-breakpoints-grid-proportions(xs);
+  }
+
+  // Items proportions for extra small screens
+  @media screen and (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+    .generate-breakpoints-grid-proportions(sm);
+  }
+
+  // Items proportions for extra medium screens
+  @media screen and (min-width: @screen-md-min) and (max-width: @screen-md-max) {
+    .generate-breakpoints-grid-proportions(md);
+  }
+
+  // Items proportions for large screens
+  @media screen and (min-width: @screen-lg-min) {
+    .generate-breakpoints-grid-proportions(lg);
+  }
+}
