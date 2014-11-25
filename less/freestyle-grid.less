@@ -14,17 +14,17 @@
 
 // --- 1. Variables ---
 
-@include-html-classes:  true;    // Generate .fgrid-X classes or use your own?
-@gutter-width:          14px;    // Gutter between grid columns
-@max-columns:           12;      // Maximum number of columns you use on your project
-@small-grid-start:      640px;   // Small screen breakpoint
-@large-grid-start:      1025px;  // Large screen breakpoint
+@fgrid-include-html-classes:  true;    // Generate .fgrid-X classes or use your own?
+@fgrid-gutter-width:          14px;    // Gutter between grid columns
+@fgrid-max-columns:           12;      // Maximum number of columns you use on your project
+@fgrid-small-grid-start:      640px;   // Small screen breakpoint
+@fgrid-large-grid-start:      1025px;  // Large screen breakpoint
 
 
 
 // --- 2. CSS ---
 
-& when (@include-html-classes) {
+& when (@fgrid-include-html-classes) {
   // Row
   .fgrid {
     .fgrid-row();
@@ -40,12 +40,12 @@
     .generate-default-grid-proportions();
 
     // Items proportions for small screens
-    @media screen and (min-width: @small-grid-start) and (max-width: (@large-grid-start - 1px)) {
+    @media screen and (min-width: @fgrid-small-grid-start) and (max-width: (@fgrid-large-grid-start - 1px)) {
       .generate-breakpoints-grid-proportions(small);
     }
 
     // Items proportions for large screens
-    @media screen and (min-width: @large-grid-start) {
+    @media screen and (min-width: @fgrid-large-grid-start) {
       .generate-breakpoints-grid-proportions(large);
     }
   }
@@ -57,14 +57,14 @@
 // Rows and columns CSS
 
 .fgrid-row() {
-  margin: 0 -(@gutter-width/2);
+  margin: 0 -(@fgrid-gutter-width/2);
   padding: 0;
   .clearfix;
 }
 
 .fgrid-item-base() {
   box-sizing: border-box;
-  padding: 0 @gutter-width/2 @gutter-width;
+  padding: 0 @fgrid-gutter-width/2 @fgrid-gutter-width;
   margin: 0;
   list-style-type: none;
 }
@@ -89,7 +89,7 @@
 // Items for default values
 // (IE. .fgrid-2 > .fgrid-item  { width: 50%; } …)
 
-.generate-default-grid-proportions(@index: 2) when (@index < (@max-columns + 1)) {
+.generate-default-grid-proportions(@index: 2) when (@index < (@fgrid-max-columns + 1)) {
   &-@{index} > &-item {
     .fgrid-item-proportion(@index);
   }
@@ -100,7 +100,7 @@
 // Items for breakpoint values (large etc.)
 // (IE. .fgrid-large-2 > .fgrid-item  { width: 50%; } …)
 
-.generate-breakpoints-grid-proportions(@size, @index: 2) when (@index < (@max-columns + 1)) {
+.generate-breakpoints-grid-proportions(@size, @index: 2) when (@index < (@fgrid-max-columns + 1)) {
   &-@{size}-@{index} > &-item {
     .fgrid-item-proportion(@index);
   }
