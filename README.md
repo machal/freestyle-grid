@@ -79,6 +79,10 @@ You are welcome to change Freestyle Grid behavior with [LESS variables](less/fre
 * Change grid parameters with `@gutter-width` and `@max-columns`.
 * Move breakpoints up or down by changing values of `@small-grid-start` and `@large-grid-start`.
 
+## FreestyleGrid and Bootstrap 
+
+FreestyleGrid cooperation with Bootstrap you can easily try [in this demo](http://www.vzhurudolu.cz/data/projects/freestyle-grid/demo/bootstrap.html) or [source file](demo/assets/demo-bootsrap.less). FreestyleGrid has LESS mixin, to help generate breakpoints and layout for any grid system, not only the Bootstrap one.
+
 ## IE8 support
 
 IE8- doesn't support Media Queries so you need to use [Respond.js](https://github.com/scottjehl/Respond) polyfill.
