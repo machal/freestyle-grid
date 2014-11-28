@@ -34,6 +34,10 @@ body {
   }
 }
 
+a {
+  text-decoration: underline;
+}
+
 code,
 a {
   color: #863E6C;
@@ -71,6 +75,10 @@ img {
 
 .bg-3 {
   background: #ffd9ba;
+}
+
+p {
+  max-width: 40em;
 }
 
 /* thumbs */

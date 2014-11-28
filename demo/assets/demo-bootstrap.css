@@ -1355,7 +1355,7 @@ pre {
   line-height: 1.42857143;
   word-break: break-all;
   word-wrap: break-word;
-  color: #333333;
+  color: #863e6c;
   background-color: #f5f5f5;
   border: 1px solid #cccccc;
   border-radius: 4px;
@@ -6791,6 +6791,9 @@ body {
     margin-right: 1em;
   }
 }
+a {
+  text-decoration: underline;
+}
 code,
 a {
   color: #863E6C;
@@ -6821,9 +6824,17 @@ img {
 .bg-3 {
   background: #ffd9ba;
 }
+p {
+  max-width: 40em;
+}
 /* thumbs */
 .thumb {
   margin-bottom: 1em;
+}
+pre,
+code {
+  background-color: transparent;
+  border: 0;
 }
 .fgrid {
   margin: 0 -15px;

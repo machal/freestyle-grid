@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
 
-  <title>Freestyle Grid: thumbs demo</title>
+  <title>Bootstrap Block Grid with FreestyleGrid</title>
 
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.css">
   <link rel="stylesheet" href="assets/demo-bootstrap.css">
@@ -13,19 +13,32 @@
 
 <body class="bg-3">
 
-  <h1>Freestyle Grid: Bootstrap thumbnails demo</h1>
+  <h1>Bootstrap „Block Grid” with FreestyleGrid</h1>
 
   <p>
-    1 column on smallest, 2 on small, 5 on large ones. Try to change width of the window.
+    Similar concept like <a href="http://foundation.zurb.com/docs/components/block_grid.html">Block Grid in Foundation</a>. Done with the kind help of <a href="https://github.com/machal/freestyle-grid">FreestyleGrid</a>.    
   </p>
 
-<pre><code>&lt;ul class=&quot;fgrid fgrid-sm-2 fgrid-lg-5&quot;&gt;
+  <p>
+    Here is an example in which we have this grid:
+    2 columns on extra small (<code>xs</code>), 
+    3 columns on small (<code>sm</code>), 
+    5 columns on medium (<code>md</code>) and
+    7 columns on large (<code>lg</code>) displays.
+    <br>Try to change width of the window.
+  </p>
+
+<pre><code>&lt;ul class=&quot;fgrid fgrid-xs-2 fgrid-sm-3 fgrid-md-5 fgrid-lg-7&quot;&gt;
   &lt;li class=&quot;fgrid-item&quot;&gt;…&lt;/li&gt;
   …
 &lt;/ul&gt;</code></pre>
 
+<p>
+  Are you curious about the source code? <a href="https://github.com/machal/freestyle-grid/tree/master/demo/assets/demo-bootstrap.less">Check it out here</a>.
+</p>
 
-    <ul class="fgrid fgrid-sm-2 fgrid-lg-5">
+
+    <ul class="fgrid fgrid-xs-2 fgrid-sm-3 fgrid-md-5 fgrid-lg-7">
       <li class="fgrid-item thumb">
         <img src="http://placehold.it/600x400/816468/29283e&text=1" alt="Image" width="600" height="400">
         <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -71,6 +84,23 @@
     <p>
       <a href="https://github.com/machal/freestyle-grid">https://github.com/machal/freestyle-grid</a>
     </p>
+
+    <hr>
+
+
+    <h2 class="h4">Bootstrap grid for reference (<code>.col-xs-6.col-sm-4</code>)</h2>
+
+    <div class="row">
+      <div class="col-xs-6 col-sm-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, sit, sunt quisquam blanditiis ullam dolore nisi eum labore expedita aspernatur voluptatibus debitis deserunt! Vitae, architecto dicta libero! Ut, omnis dignissimos.</p>
+      </div>
+      <div class="col-xs-6 col-sm-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, sit, sunt quisquam blanditiis ullam dolore nisi eum labore expedita aspernatur voluptatibus debitis deserunt! Vitae, architecto dicta libero! Ut, omnis dignissimos.</p>
+      </div>
+      <div class="hidden-xs col-sm-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, sit, sunt quisquam blanditiis ullam dolore nisi eum labore expedita aspernatur voluptatibus debitis deserunt! Vitae, architecto dicta libero! Ut, omnis dignissimos.</p>
+      </div>    
+    </div>    
 
   </body>
 

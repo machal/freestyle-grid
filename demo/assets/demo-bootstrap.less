@@ -15,11 +15,20 @@
 // --- Freestyle Grid for Bootstrap ---
 
 
-// - 1) Configure Freestyle Grid -
+// - 1) Configure Freestyle Grid  -
 
 @fgrid-include-html-classes:  true;                  // We don't need FG own HTML classes -
 @fgrid-gutter-width:          @grid-gutter-width;    // Gutter between grid columns
 @fgrid-max-columns:           @grid-columns;         // Maximum number of columns you use on your project
+
+// - 2) Change Bootstrap styling
+
+@pre-color: #863E6C;
+
+pre, code {
+  background-color: transparent;  
+  border: 0;  
+}
 
 
 // - 2) Let's build HTML classes for Bootstrap -
