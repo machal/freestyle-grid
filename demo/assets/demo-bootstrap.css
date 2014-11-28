@@ -6988,7 +6988,7 @@ code {
 .fgrid-12 > .fgrid-item:nth-of-type(12n + 1) {
   clear: left;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .fgrid-xs-2 > .fgrid-item {
     width: 50%;
     float: left;
