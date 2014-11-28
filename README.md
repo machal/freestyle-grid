@@ -1,9 +1,9 @@
-# Freestyle Grid
+# FreestyleGrid
 
 **Common grids like [the Bootstrap's one](http://getbootstrap.com/css/#grid) are great for common layout. But sometimes your page or UI component needs irregular layout – for example 3, 5 or 11
- columns grid. Then you need irregular grid. Freestyle grid.**
+ columns grid. Then you need irregular grid. FreestyleGrid.**
 
-Freestyle Grid is a tiny LESS layout module for fluid and responsive – but irregular – grid. Suitable for non-layout grids such as thumbnails. Great for fast prototyping. Based on idea behind [Block Grid](http://foundation.zurb.com/docs/components/block_grid.html) from Foundation framework.
+FreestyleGrid is a tiny LESS layout module for fluid and responsive – but irregular – grid. Suitable for non-layout grids such as thumbnails. Great for fast prototyping. Based on idea behind [Block Grid](http://foundation.zurb.com/docs/components/block_grid.html) from Foundation framework.
 
 
 ## Table of contents
@@ -11,6 +11,7 @@ Freestyle Grid is a tiny LESS layout module for fluid and responsive – but irr
 * [Installation](#installation)
 * [Examples](#examples)
 * [Configuration](#configuration)
+* [FreestyleGrid and Bootstrap](#freestylegrid-and-bootstrap)
 * [IE8 support](#ie8-support)
 * [Author and licence](#author-and-licence)
 
@@ -39,7 +40,7 @@ Of course, you can use [compiled CSS](css/) files only.
 [Try it in your browser](http://www.vzhurudolu.cz/data/projects/freestyle-grid/demo/simple.html).
 
 Have you noticed that you don't need to write markup for layout row? Yes, writing layout markup
-with Freestyle Grid is really fast.
+with FreestyleGrid is really fast.
 
 ### 2nd example: 1/3 layout on small &amp; 1/6 on large displays
 
@@ -73,7 +74,7 @@ Note: `ul`/`li` markup is not required.
 
 ## Configuration
 
-You are welcome to change Freestyle Grid behavior with [LESS variables](less/freestyle-grid.less#L12):
+You are welcome to change FreestyleGrid behavior with [LESS variables](less/freestyle-grid.less#L12):
 
 * Generate your own classes with `@include-html-classes` set to `false` and [our mixins](less/freestyle-grid.less#L55).
 * Change grid parameters with `@gutter-width` and `@max-columns`.
