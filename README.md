@@ -1,9 +1,9 @@
 # Freestyle Grid
 
-**Common grids like [the Bootstrap's one](http://getbootstrap.com/css/#grid) are great for regular layout. But sometimes your page or UI component needs uncommon layout – for example 3, 5 or 11
-grid columns. Then you need irregular grid. Freestyle grid.**
+**Common grids like [the Bootstrap's one](http://getbootstrap.com/css/#grid) are great for common layout. But sometimes your page or UI component needs irregular layout – for example 3, 5 or 11
+ columns grid. Then you need irregular grid. Freestyle grid.**
 
-Freestyle Grid is a tiny LESS layout module for fluid and responsive – but irregular – grid. Suitable for non-layout grids such as thumbnails. Great for fast prototyping. Based on the [Block Grid](http://foundation.zurb.com/docs/components/block_grid.html) from Foundation framework.
+Freestyle Grid is a tiny LESS layout module for fluid and responsive – but irregular – grid. Suitable for non-layout grids such as thumbnails. Great for fast prototyping. Based on idea behind [Block Grid](http://foundation.zurb.com/docs/components/block_grid.html) from Foundation framework.
 
 
 ## Table of contents
@@ -78,7 +78,6 @@ You are welcome to change Freestyle Grid behavior with [LESS variables](less/fre
 * Generate your own classes with `@include-html-classes` set to `false` and [our mixins](less/freestyle-grid.less#L55).
 * Change grid parameters with `@gutter-width` and `@max-columns`.
 * Move breakpoints up or down by changing values of `@small-grid-start` and `@large-grid-start`.
-
 
 ## IE8 support
 
